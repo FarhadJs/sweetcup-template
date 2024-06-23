@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply transition-colors duration-500;
+}
+
+body {
+  @apply bg-white text-black dark:text-white dark:bg-[#242424];
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+.pink-highlight {
+  /* Ellipse 2 */
+
+  position: absolute;
+  width: 1000px;
+  height: 1213.7px;
+  right: 0px;
+  top: -95px;
+}
+
+.circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+}
+
+@keyframes moveAroundCircle {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(90px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(90px)
+      rotate(-360deg);
+  }
+}
