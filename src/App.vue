@@ -15,9 +15,18 @@
 
 <template>
   <div class="overflow-hidden w-full">
-    <h1 class="text-4xl font-bold dark:text-white">Hello World!</h1>
-    <input type="checkbox" :onclick="ChangeTheme" />
-    <img :src="HightLightPink" class="pink-highlight w-[100vh] " alt="" />
+    <nav class="flex gap-5 p-4 px-44">
+      <input type="checkbox" :onclick="ChangeTheme" />
+      <h1 class="text-xl font-[Sail] text-[#9C0746]">Sweet Cup Cake</h1>
+    </nav>
+    <div class="mt-80 ml-52 absolute">
+      <h1 class="text-8xl font-[Sail] text-[#9C0746]">Sweet Cup Cake</h1>
+    </div>
+    <img
+      :src="HightLightPink"
+      class="pink-highlight w-[100vh]"
+      alt=""
+      draggable="false" />
 
     <CupCakes />
   </div>

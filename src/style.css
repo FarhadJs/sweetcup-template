@@ -3,11 +3,13 @@
 @tailwind utilities;
 
 body {
-  @apply transition-colors duration-500;
+  @apply bg-white text-black dark:text-white dark:bg-[#242424] transition-colors duration-500 select-none;
 }
 
-body {
-  @apply bg-white text-black dark:text-white dark:bg-[#242424];
+@font-face {
+  font-family: "Sail";
+  src: url("./assets/fonts/Sail-Regular.ttf") format("truetype");
+  font-weight: normal;
 }
 
 @media (prefers-color-scheme: light) {
