@@ -11,6 +11,11 @@ body {
   src: url("./assets/fonts/Sail-Regular.ttf") format("truetype");
   font-weight: normal;
 }
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-Bold.ttf");
+  font-weight: normal;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -23,7 +28,7 @@ body {
   /* Ellipse 2 */
 
   position: absolute;
-  width: 1000px;
+  width: 1100px;
   height: 1213.7px;
   right: 0px;
   top: -95px;
