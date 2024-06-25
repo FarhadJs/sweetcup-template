@@ -46,7 +46,7 @@
       </div>
       <img
         :src="HightLightPink"
-        class="pink-highlight w-[100vh]"
+        class="pink-highlight"
         alt=""
         draggable="false" />
 

@@ -32,6 +32,7 @@ body {
   height: 1213.7px;
   right: 0px;
   top: -95px;
+  z-index: -10;
 }
 
 .circle {

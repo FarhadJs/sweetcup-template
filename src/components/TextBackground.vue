@@ -7,7 +7,7 @@
   p {
     position: absolute;
     font-family: "Sail";
-    font-size: 350px;
+    font-size: 30vh;
     z-index: 0;
     transform: rotate(-45deg);
     @apply text-[#9C0746] text-opacity-5 dark:text-white dark:opacity-5;
