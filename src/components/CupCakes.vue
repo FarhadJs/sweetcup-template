@@ -1,8 +1,10 @@
 <template>
   <div dir="rtl">
     <p
+      v-for="(cup, i) in JsonCupCakes"
+      :key="i"
       class="absolute top-52 right-72 bg-[#444251] rounded-full w-28 h-28 text-4xl flex justify-center items-center text-white p-4">
-      30$
+      {{ cup.price }}$
     </p>
 
     <img
@@ -35,59 +37,64 @@
 
   const CupCakeSlide = ref(0);
   const CupCakes = document.getElementsByClassName("cupcake");
-  // const CUpCakes = ref([
-  //   {
-  //     name: "PinkCupCake",
-  //     price: 30,
-  //     url: "",
-  //   },
-  //   {
-  //     name: "CaramelCupCake",
-  //     price: 35,
-  //     url: "",
-  //   },
-  //   {
-  //     name: "ChocolateCupCake",
-  //     price: 40,
-  //     url: "",
-  //   },
-  // ]);
+
+  const JsonCupCakes = ref([
+    {
+      name: "PinkCupCake",
+      url: "../assets//img/pink-cupcake.png",
+      price: 30,
+    },
+    {
+      name: "ChocolateCupCake",
+      url: "../assets//img/chocolate-cupcake.png",
+      price: 40,
+    },
+    {
+      name: "CaramelCupcake",
+      url: "../assets//img/caramel-cupcake.png",
+      price: 35,
+    },
+  ]);
 
   const firstElement = ref();
   const getLeftAction = () => {
     switch (CupCakeSlide.value) {
       case 1:
-        CupCakes[1].classList.add("-translate-x-[430px]");
-        CupCakes[1].classList.add("-translate-y-40");
-        CupCakes[1].classList.remove("translate-x-32");
-        CupCakes[1].classList.remove("translate-y-[130px]");
+        CupCakes[0].classList.add("translate-x-44");
+        CupCakes[0].classList.add("-translate-y-[3em]");
+        CupCakes[0].classList.remove("translate-x-36");
+        CupCakes[0].classList.remove("translate-y-[32em]");
+
+        CupCakes[2].classList.add("-translate-y-[15em]");
+        CupCakes[2].classList.remove("-translate-x-[27em]");
+        CupCakes[2].classList.remove("-translate-y-[33em]");
+        CupCakes[2].classList.remove("scale-150");
+
+        CupCakes[1].classList.add("-translate-x-[26.5em]");
+        CupCakes[1].classList.add("-translate-y-[11em]");
         CupCakes[1].classList.add("scale-150");
-
-        CupCakes[2].classList.remove("translate-x-32");
-        CupCakes[2].classList.remove("-translate-y-56");
-        CupCakes[2].classList.add("-translate-x-[430px]");
-        CupCakes[2].classList.add("-translate-y-[560px]");
-        CupCakes[2].classList.add("scale-150");
-
-        CupCakes[0].classList.remove("translate-x-48");
-        CupCakes[0].classList.remove("-translate-y-10");
-        CupCakes[0].classList.add("translate-x-32");
-        CupCakes[0].classList.add("-translate-y-56");
-        CupCakeSlide.value += 1;
+        CupCakes[1].classList.remove("translate-x-[7em]");
+        CupCakes[1].classList.remove("-translate-y-[28em]");
+        CupCakeSlide.value -= 1;
+        console.log(CupCakeSlide.value);
 
         break;
       case 0:
-        CupCakes[0].classList.add("translate-x-48");
-        CupCakes[0].classList.add("-translate-y-10");
-        CupCakes[0].classList.remove("scale-150");
+        CupCakes[0].classList.remove("translate-x-44");
+        CupCakes[0].classList.remove("-translate-y-[3em]");
+        CupCakes[0].classList.add("scale-150");
 
-        CupCakes[1].classList.add("-translate-x-[430px]");
-        CupCakes[1].classList.add("-translate-y-48");
-        CupCakes[1].classList.add("scale-150");
+        CupCakes[1].classList.remove("-translate-x-[26.5em]");
+        CupCakes[1].classList.remove("-translate-y-[11em]");
+        CupCakes[1].classList.remove("scale-150");
+        CupCakes[1].classList.add("translate-x-[7em]");
+        CupCakes[1].classList.add("translate-y-[8em]");
 
-        CupCakes[2].classList.add("translate-x-32");
-        CupCakes[2].classList.add("-translate-y-[230px]");
-        CupCakeSlide.value -= 1;
+        CupCakes[2].classList.remove("translate-x-32");
+        CupCakes[2].classList.remove("-translate-y-[230px]");
+        CupCakes[2].classList.add("translate-x-[8em]");
+        CupCakes[2].classList.add("-translate-y-[48em]");
+        console.log(CupCakeSlide.value);
 
       default:
         break;
@@ -96,37 +103,42 @@
   const getRightAction = () => {
     switch (CupCakeSlide.value) {
       case 0:
-        CupCakes[0].classList.add("translate-x-48");
-        CupCakes[0].classList.add("-translate-y-10");
-        CupCakes[0].classList.remove("scale-150");
-
-        CupCakes[1].classList.add("-translate-x-[430px]");
-        CupCakes[1].classList.add("-translate-y-48");
-        CupCakes[1].classList.add("scale-150");
-
         CupCakes[2].classList.add("translate-x-32");
         CupCakes[2].classList.add("-translate-y-[230px]");
+        CupCakes[2].classList.remove("translate-x-[8em]");
+        CupCakes[2].classList.remove("-translate-y-[48em]");
+        CupCakes[2].classList.add("-translate-y-[15em]");
+
+        CupCakes[1].classList.remove("translate-x-[7em]");
+        CupCakes[1].classList.remove("translate-y-[8em]");
+        CupCakes[1].classList.add("-translate-y-[11em]");
+        CupCakes[1].classList.add("-translate-x-[26.5em]");
+        CupCakes[1].classList.add("-translate-y-[11em]");
+        CupCakes[1].classList.add("scale-150");
+
+        CupCakes[0].classList.remove("scale-150");
+        CupCakes[0].classList.add("translate-x-36");
+        CupCakes[0].classList.add("-translate-y-[3em]");
         CupCakeSlide.value += 1;
         console.log(CupCakeSlide.value);
+
         break;
       case 1:
-        CupCakes[0].classList.remove("-translate-x-[430px]");
-        CupCakes[0].classList.add("translate-y-[520px]");
-        CupCakes[0].classList.remove("-translate-y-40");
-        CupCakes[0].classList.add("translate-x-48");
-        CupCakes[0].classList.remove("scale-150");
+        CupCakes[0].classList.remove("translate-x-36");
+        CupCakes[0].classList.remove("-translate-y-[3em]");
+        CupCakes[0].classList.add("translate-x-36");
+        CupCakes[0].classList.add("translate-y-[32em]");
 
-        CupCakes[2].classList.remove("translate-x-32");
-        CupCakes[2].classList.add("-translate-x-[430px]");
-        CupCakes[2].classList.add("-translate-y-[560px]");
-        CupCakes[2].classList.remove("-translate-y-56");
+        CupCakes[2].classList.remove("-translate-y-[15em]");
+        CupCakes[2].classList.add("-translate-x-[27em]");
+        CupCakes[2].classList.add("-translate-y-[33em]");
         CupCakes[2].classList.add("scale-150");
 
-        CupCakes[1].classList.add("-translate-y-[500px]");
-        CupCakes[1].classList.add("translate-x-[150px]");
-        CupCakes[1].classList.remove("-translate-y-10");
-        CupCakes[1].classList.remove("translate-x-48");
+        CupCakes[1].classList.remove("-translate-x-[26.5em]");
+        CupCakes[1].classList.remove("-translate-y-[11em]");
         CupCakes[1].classList.remove("scale-150");
+        CupCakes[1].classList.add("translate-x-[7em]");
+        CupCakes[1].classList.add("-translate-y-[28em]");
         console.log(CupCakeSlide.value);
 
       default:
