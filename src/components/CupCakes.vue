@@ -96,12 +96,14 @@
         CupCakes[1].classList.remove("translate-x-[8em]");
         CupCakes[1].classList.remove("-translate-y-[27em]");
         CupCakes[1].classList.add("-translate-x-[27em]");
-        CupCakes[1].classList.add("-translate-y-[10em]");
+        CupCakes[1].classList.add("-translate-y-[11em]");
         CupCakes[1].classList.add("scale-150");
         console.log(CupCakeSlide.value);
 
         break;
       case 0:
+        CupCakes[0].classList.remove("translate-x-[11em]");
+        CupCakes[0].classList.remove("-translate-y-8");
         CupCakes[0].classList.remove("translate-x-52");
         CupCakes[0].classList.remove("-translate-y-[5em]");
         CupCakes[0].classList.add("scale-150");
