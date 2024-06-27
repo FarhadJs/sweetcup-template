@@ -21,25 +21,29 @@
       src="../assets//img/caramel-cupcake.png"
       alt="CaramelCupcake" />
   </div>
-  <button
-    @click="
-      leftButtonSlideAction();
-      getLeftAction();
-    "
-    class="absolute right-[600px] top-[800px] z-20 bg-white p-4 rounded-lg active:scale-95 transition-all duration-300">
-    left
-  </button>
-  <button
-    @click="
-      rightButtonSlideAction();
-      getRightAction();
-    "
-    class="absolute right-[500px] top-[800px] z-20 bg-white p-4 rounded-lg active:scale-95 transition-all duration-300">
-    Right
-  </button>
+  <div class="absolute z-20 top-[53em] right-[480px] flex gap-7">
+    <button
+      @click="
+        leftButtonSlideAction();
+        getLeftAction();
+      "
+      class="bg-white p-4 rounded-lg active:scale-95 transition-all duration-300">
+      <img :src="ArrowLeft" alt="" />
+    </button>
+    <button
+      @click="
+        rightButtonSlideAction();
+        getRightAction();
+      "
+      class="bg-white p-4 rounded-lg active:scale-95 transition-all duration-300">
+      <img :src="ArrowRight" alt="" />
+    </button>
+  </div>
 </template>
 <script setup>
   import { ref } from "vue";
+  import ArrowLeft from "../assets/svg/arrow-left.svg";
+  import ArrowRight from "../assets/svg/arrow-right.svg";
 
   const CupCakeSlide = ref(0);
   const CupCakes = document.getElementsByClassName("cupcake");
@@ -87,8 +91,8 @@
         CupCakes[0].classList.add("translate-x-52");
         CupCakes[0].classList.add("-translate-y-[5em]");
 
-        CupCakes[2].classList.remove("-translate-x-[26.5em]");
-        CupCakes[2].classList.remove("-translate-y-[35em]");
+        CupCakes[2].classList.remove("-translate-x-[25.8em]");
+        CupCakes[2].classList.remove("-translate-y-[34em]");
         CupCakes[2].classList.remove("scale-150");
         CupCakes[2].classList.add("-translate-y-[15em]");
         CupCakes[2].classList.add("translate-x-[10em]");
@@ -154,8 +158,8 @@
       case 2:
         CupCakes[2].classList.remove("translate-x-40");
         CupCakes[2].classList.remove("-translate-y-[15em]");
-        CupCakes[2].classList.add("-translate-x-[26.5em]");
-        CupCakes[2].classList.add("-translate-y-[35em]");
+        CupCakes[2].classList.add("-translate-x-[25.8em]");
+        CupCakes[2].classList.add("-translate-y-[34em]");
         CupCakes[2].classList.add("scale-150");
 
         CupCakes[1].classList.remove("-translate-x-[26.5em]");
@@ -178,6 +182,6 @@
 </script>
 <style scoped>
   img {
-    @apply transition-all duration-500;
+    @apply transition-all duration-700 ease-in-out;
   }
 </style>
