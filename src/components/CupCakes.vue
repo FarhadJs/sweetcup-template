@@ -22,7 +22,10 @@
       alt="CaramelCupcake" />
   </div>
   <div class="absolute z-20 top-[53em] right-[480px] flex gap-7">
-    <img src="../assets//img//comp-single.png" class="absolute right-52 -top-36 scale-125" alt="">
+    <img
+      src="../assets//img//comp-single.png"
+      class="absolute right-52 -top-36 scale-125"
+      alt="" />
     <button
       @click="
         leftButtonSlideAction();
@@ -39,7 +42,6 @@
       class="bg-white p-4 rounded-lg active:scale-95 transition-all duration-300">
       <img :src="ArrowRight" alt="" />
     </button>
-
   </div>
 </template>
 <script setup>
@@ -140,6 +142,7 @@
         CupCakes[2].classList.remove("-translate-y-[780px]");
         CupCakes[2].classList.add("translate-x-40");
         CupCakes[2].classList.add("-translate-y-[15em]");
+        CupCakes[2].classList.add("-translate-y-[15em]");
 
         CupCakes[1].classList.remove("translate-x-32");
         CupCakes[1].classList.remove("translate-y-32");
@@ -159,6 +162,7 @@
         break;
       case 2:
         CupCakes[2].classList.remove("translate-x-40");
+        CupCakes[2].classList.remove("translate-x-[10em]");
         CupCakes[2].classList.remove("-translate-y-[15em]");
         CupCakes[2].classList.add("-translate-x-[25.8em]");
         CupCakes[2].classList.add("-translate-y-[34em]");
