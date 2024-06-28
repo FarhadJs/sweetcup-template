@@ -22,6 +22,7 @@
       alt="CaramelCupcake" />
   </div>
   <div class="absolute z-20 top-[53em] right-[480px] flex gap-7">
+    <img src="../assets//img//comp-single.png" class="absolute right-52 -top-36 scale-125" alt="">
     <button
       @click="
         leftButtonSlideAction();
@@ -38,6 +39,7 @@
       class="bg-white p-4 rounded-lg active:scale-95 transition-all duration-300">
       <img :src="ArrowRight" alt="" />
     </button>
+
   </div>
 </template>
 <script setup>
