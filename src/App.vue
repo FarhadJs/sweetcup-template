@@ -4,6 +4,7 @@
   import ShopIcon from "./assets/svg/shopIcon.svg";
   import CupCakes from "./components/CupCakes.vue";
   import TextBackground from "./components/TextBackground.vue";
+  import VideoTrailer from "./components/VideoTrailer.vue";
 
   const theme = ref("dark");
 
@@ -51,6 +52,10 @@
         draggable="false" />
 
       <CupCakes />
+
+      <VideoTrailer />
+
+      <br /><br /><br />
     </main>
   </div>
 </template>

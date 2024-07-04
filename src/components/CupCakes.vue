@@ -1,11 +1,8 @@
 <template>
-  <div dir="rtl">
+  <div dir="rtl" class="relative">
     <p
-      v-for="(cup, i) in JsonCupCakes"
-      :key="i"
-      v-show="CupCakeSlide == cup.id"
-      class="absolute top-52 right-72 bg-[#444251] rounded-full w-28 h-28 text-4xl flex justify-center items-center text-white p-4">
-      {{ cup.price }}$
+      class="absolute top-40 right-64 bg-[#444251] rounded-full w-28 h-28 text-4xl flex justify-center items-center text-white p-4">
+      {{ CupCakeSelected.price }}$
     </p>
 
     <img
@@ -20,11 +17,17 @@
       class="cupcake w-[300px] translate-x-32 -translate-y-[780px]"
       src="../assets//img/caramel-cupcake.png"
       alt="CaramelCupcake" />
+
+    <h3
+      class="bg-white p-3 rounded-full text-center text-2xl font-bold absolute z-[500] bottom-96 right-[18.8em] w-60">
+      {{ CupCakeSelected.name }}
+    </h3>
   </div>
+
   <div class="absolute z-20 top-[53em] right-[480px] flex gap-7">
     <img
       src="../assets//img//comp-single.png"
-      class="absolute right-52 -top-36 scale-125"
+      class="absolute right-52 -top-32 scale-125"
       alt="" />
     <button
       @click="
@@ -45,29 +48,35 @@
   </div>
 </template>
 <script setup>
-  import { ref } from "vue";
+  import { onBeforeMount, ref } from "vue";
   import ArrowLeft from "../assets/svg/arrow-left.svg";
   import ArrowRight from "../assets/svg/arrow-right.svg";
 
   const CupCakeSlide = ref(0);
   const CupCakes = document.getElementsByClassName("cupcake");
+  const CupCakeSelected = ref({
+    id: 0,
+    name: "",
+    url: "",
+    price: 0,
+  });
 
   const JsonCupCakes = ref([
     {
       id: 0,
-      name: "PinkCupCake",
+      name: "Vanilla",
       url: "../assets//img/pink-cupcake.png",
       price: 30,
     },
     {
       id: 1,
-      name: "ChocolateCupCake",
+      name: "Chocolate",
       url: "../assets//img/chocolate-cupcake.png",
       price: 40,
     },
     {
       id: 2,
-      name: "CaramelCupcake",
+      name: "Caramel",
       url: "../assets//img/caramel-cupcake.png",
       price: 35,
     },
@@ -107,6 +116,7 @@
         CupCakes[1].classList.add("-translate-y-[11em]");
         CupCakes[1].classList.add("scale-150");
         console.log(CupCakeSlide.value);
+        CupCakeSelected.value = JsonCupCakes.value[1];
 
         break;
       case 0:
@@ -129,6 +139,7 @@
         CupCakes[1].classList.add("translate-x-32");
         CupCakes[1].classList.add("translate-y-32");
         console.log(CupCakeSlide.value);
+        CupCakeSelected.value = JsonCupCakes.value[0];
         break;
       default:
         break;
@@ -158,6 +169,7 @@
         CupCakes[0].classList.add("translate-x-[11em]");
         CupCakes[0].classList.add("-translate-y-8");
         console.log(CupCakeSlide.value);
+        CupCakeSelected.value = JsonCupCakes.value[1];
 
         break;
       case 2:
@@ -179,12 +191,17 @@
         CupCakes[0].classList.add("translate-x-52");
         CupCakes[0].classList.add("translate-y-[32em]");
         console.log(CupCakeSlide.value);
+        CupCakeSelected.value = JsonCupCakes.value[2];
 
         break;
       default:
         break;
     }
   };
+
+  onBeforeMount(() => {
+    CupCakeSelected.value = JsonCupCakes.value[0];
+  });
 </script>
 <style scoped>
   img {
