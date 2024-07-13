@@ -122,8 +122,6 @@
   };
 
   const getLeftAction = () => {
-    console.log(CupCakeSlide.value);
-
     switch (CupCakeSlide.value) {
       case 1:
         CupCakes[0].classList.remove("translate-x-52");
@@ -142,7 +140,7 @@
         CupCakes[1].classList.add("-translate-x-[27em]");
         CupCakes[1].classList.add("-translate-y-[11em]");
         CupCakes[1].classList.add("scale-150");
-        console.log(CupCakeSlide.value);
+
         CupCakeSelected.value = JsonCupCakes.value[1];
 
         break;
@@ -165,7 +163,7 @@
         CupCakes[1].classList.remove("scale-150");
         CupCakes[1].classList.add("translate-x-32");
         CupCakes[1].classList.add("translate-y-32");
-        console.log(CupCakeSlide.value);
+
         CupCakeSelected.value = JsonCupCakes.value[0];
         break;
       default:
@@ -173,7 +171,6 @@
     }
   };
   const getRightAction = () => {
-    console.log(CupCakeSlide.value);
     switch (CupCakeSlide.value) {
       case 1:
         CupCakes[2].classList.remove("translate-x-32");
@@ -195,7 +192,7 @@
         CupCakes[0].classList.remove("scale-150");
         CupCakes[0].classList.add("translate-x-[11em]");
         CupCakes[0].classList.add("-translate-y-8");
-        console.log(CupCakeSlide.value);
+
         CupCakeSelected.value = JsonCupCakes.value[1];
 
         break;
@@ -217,7 +214,7 @@
         CupCakes[0].classList.remove("-translate-y-8");
         CupCakes[0].classList.add("translate-x-52");
         CupCakes[0].classList.add("translate-y-[32em]");
-        console.log(CupCakeSlide.value);
+
         CupCakeSelected.value = JsonCupCakes.value[2];
 
         break;
@@ -227,27 +224,15 @@
   };
 
   /**
-   * Toggles the "scale-[1.75]" class on the corresponding CupCakes element based on the name of the selected CupCake.
+   * A function to check and toggle the class "scale-[1.75]" based on the presence of "scale-150" class in CupCakes.
    *
-   * @return {void} This function does not return anything.
+   * @return {void} Does not return anything.
    */
   const checkSelecting = () => {
-    switch (CupCakeSelected.value.name) {
-      case "Vanilla":
-        CupCakes[0].classList.toggle("scale-[1.75]");
-
-        break;
-      case "Chocolate":
-        CupCakes[1].classList.toggle("scale-[1.75]");
-
-        break;
-      case "Caramel":
-        CupCakes[2].classList.toggle("scale-[1.75]");
-
-        break;
-
-      default:
-        break;
+    for (let i = 0; i < CupCakes.length; i++) {
+      const cupCake = CupCakes.item(i);
+      if (cupCake.classList.contains("scale-150"))
+        cupCake.classList.toggle("scale-[1.75]");
     }
   };
 

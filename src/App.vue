@@ -5,6 +5,7 @@
   import CupCakes from "./components/CupCakes.vue";
   import TextBackground from "./components/TextBackground.vue";
   import VideoTrailer from "./components/VideoTrailer.vue";
+  import WhyIsItDeliciousHere from "./components/WhyIsItDeliciousHere.vue";
 
   const theme = ref("dark");
 
@@ -47,6 +48,7 @@
       <CupCakes />
 
       <VideoTrailer />
+      <WhyIsItDeliciousHere />
 
       <br /><br /><br />
     </main>
