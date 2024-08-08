@@ -8,19 +8,11 @@
   import WhyIsItDeliciousHere from "./components/WhyIsItDeliciousHere.vue";
 
   const theme = ref("dark");
-
-  // const ChangeTheme = (e) => {
-  //   console.log(theme);
-  //   if (!e.target.checked) theme.value = "light";
-  //   else theme.value = "dark";
-  //   document.documentElement.className = theme.value;
-  // };
 </script>
 
 <template>
   <div class="overflow-hidden w-full">
     <nav class="flex gap-5 p-5 px-44 pr-64 relative z-50">
-      <!-- <input type="checkbox" :onclick="ChangeTheme" /> -->
       <h1 class="text-xl font-[Sail] text-[#9C0746]">Sweet Cup Cake</h1>
       <ul class="list-none flex gap-10 mx-auto">
         <li>About us</li>
