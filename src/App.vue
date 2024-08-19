@@ -6,6 +6,7 @@
   import TextBackground from "./components/TextBackground.vue";
   import VideoTrailer from "./components/VideoTrailer.vue";
   import WhyIsItDeliciousHere from "./components/WhyIsItDeliciousHere.vue";
+  import NewProducts from "./components/NewProducts.vue";
 
   const theme = ref("dark");
 </script>
@@ -41,6 +42,7 @@
 
       <VideoTrailer />
       <WhyIsItDeliciousHere />
+      <NewProducts />
 
       <br /><br /><br />
     </main>
