@@ -1,6 +1,6 @@
 <template>
   <div class="mt-44 relative">
-    <h1>Catalog of tasty treats</h1>
+    <h1 class="text-center">Catalog of tasty treats</h1>
     <img
       src="../assets/img/mixed-berries-1.png"
       class="absolute -top-16 left-0" />
