@@ -30,7 +30,7 @@
       </div>
       <div class="w-96 flex flex-col justify-center items-center">
         <img :src="AppleTart" />
-        <h3 class="text-red-500 text-4xl">Tiramisu</h3>
+        <h3 class="text-red-500 text-4xl">Apple tart</h3>
         yolk,
         <p>
           Fresh eggs, sugar, mascarpone, ready-made "Savoyardi" cookies,

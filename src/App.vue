@@ -8,6 +8,7 @@
   import WhyIsItDeliciousHere from "./components/WhyIsItDeliciousHere.vue";
   import NewProducts from "./components/NewProducts.vue";
   import HowDoWeWork from "./components/HowDoWeWork.vue";
+  import CatalogOfTastyTreats from "./components/CatalogOfTastyTreats.vue";
 
   const theme = ref("dark");
 </script>
@@ -45,6 +46,7 @@
       <WhyIsItDeliciousHere />
       <NewProducts />
       <HowDoWeWork />
+      <CatalogOfTastyTreats />
 
       <br /><br /><br />
     </main>
