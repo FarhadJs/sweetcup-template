@@ -9,6 +9,7 @@
   import NewProducts from "./components/NewProducts.vue";
   import HowDoWeWork from "./components/HowDoWeWork.vue";
   import CatalogOfTastyTreats from "./components/CatalogOfTastyTreats.vue";
+  import CollectionsOfCupcakes from "./components/CollectionsOfCupcakes.vue";
 
   const theme = ref("dark");
 </script>
@@ -30,7 +31,7 @@
       <div
         class="mt-72 ml-52 absolute flex flex-col justify-center items-left gap-16">
         <h1 class="text-8xl font-[Sail] text-[#9C0746]">Sweet Cup Cake</h1>
-        <p class="font-[Montserrat] text-7xl w-2/3">
+        <p class="font-[Montserrat-Bold] text-7xl w-2/3">
           We will make yours life is sweeter!
         </p>
       </div>
@@ -47,6 +48,7 @@
       <NewProducts />
       <HowDoWeWork />
       <CatalogOfTastyTreats />
+      <CollectionsOfCupcakes />
 
       <br /><br /><br />
     </main>
