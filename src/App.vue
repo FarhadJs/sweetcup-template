@@ -15,7 +15,11 @@
 </script>
 
 <template>
-  <div class="overflow-hidden w-full">
+
+  <div class="flex flex-col justify-center items-center text-xl fixed top-0 left-0 right-0 bottom-0 z-[999999999] bg-gray-500 text-white text-center lg:hidden">
+    The Resolution for Mobile is not available yet.
+  </div>
+  <div class="overflow-hidden w-full hidden lg:block">
     <nav class="flex gap-5 p-5 px-44 pr-64 relative z-50">
       <h1 class="text-xl font-[Sail] text-[#9C0746]">Sweet Cup Cake</h1>
       <ul class="list-none flex gap-10 mx-auto">
