@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-32">
+  <div class="mt-32 flex flex-col">
     <div class="grid grid-cols-3 place-items-center gap-32 text-center">
       <div class="flex flex-col items-center gap-5 w-[319px]">
         <img src="../assets/img/pink-cupcake.png" class="w-[319px] h-[358px]" />
@@ -192,6 +192,25 @@
         </button>
       </div>
     </div>
+        <button
+          class="text-white mx-auto w-full mt-28"
+          style="
+            background: linear-gradient(
+              85.61deg,
+              #9c0746 -15.57%,
+              #b44e79 128.11%
+            );
+            width: 260px;
+            height: 70px;
+            top: 5076px;
+            left: 860px;
+            gap: 0px;
+            border-radius: 50px 50px 50px 50px;
+            opacity: 0px;
+            box-shadow: 0px 20px 40px 0px #42021d4f;
+          ">
+          More products
+        </button>
   </div>
 </template>
 
