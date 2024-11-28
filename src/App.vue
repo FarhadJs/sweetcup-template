@@ -10,13 +10,14 @@
   import HowDoWeWork from "./components/HowDoWeWork.vue";
   import CatalogOfTastyTreats from "./components/CatalogOfTastyTreats.vue";
   import CollectionsOfCupcakes from "./components/CollectionsOfCupcakes.vue";
+  import OrderSweet from "./components/OrderSweet.vue";
 
   const theme = ref("dark");
 </script>
 
 <template>
-
-  <div class="flex flex-col justify-center items-center text-xl fixed top-0 left-0 right-0 bottom-0 z-[999999999] bg-gray-500 text-white text-center lg:hidden">
+  <div
+    class="flex flex-col justify-center items-center text-xl fixed top-0 left-0 right-0 bottom-0 z-[999999999] bg-gray-500 text-white text-center lg:hidden">
     The Resolution for Mobile is not available yet.
   </div>
   <div class="overflow-hidden w-full hidden lg:block">
@@ -53,6 +54,7 @@
       <HowDoWeWork />
       <CatalogOfTastyTreats />
       <CollectionsOfCupcakes />
+      <OrderSweet />
 
       <br /><br /><br />
     </main>
