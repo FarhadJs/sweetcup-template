@@ -16,45 +16,46 @@
 </script>
 
 <template>
-  <div
+  <!-- <div
     class="flex flex-col justify-center items-center text-xl fixed top-0 left-0 right-0 bottom-0 z-[999999999] bg-gray-500 text-white text-center lg:hidden">
     The Resolution for Mobile is not available yet.
-  </div>
-  <div class="overflow-hidden w-full hidden lg:block">
-    <nav class="flex gap-5 p-5 px-44 pr-64 relative z-50">
+  </div> -->
+  <div class="overflow-hidden w-full lg:block">
+    <nav class="flex gap-5 p-5 pl-7 lg:px-64 justify-between lg:justify-around relative z-50">
+    <img src="./assets/svg/menu-burger.svg" class="scale-150 -mt-2 lg:hidden" />
       <h1 class="text-xl font-[Sail] text-[#9C0746]">Sweet Cup Cake</h1>
-      <ul class="list-none flex gap-10 mx-auto">
+      <ul class="list-none lg:flex gap-10 mx-auto hidden">
         <li>About us</li>
         <li>Catalog</li>
         <li>Reviews</li>
         <li>Contacts</li>
       </ul>
-      <img :src="ShopIcon" alt="ShopIcon" />
+      <img :src="ShopIcon" alt="ShopIcon" class="scale-75" />
     </nav>
     <main>
       <TextBackground />
       <div
-        class="mt-72 ml-52 absolute flex flex-col justify-center items-left gap-16">
-        <h1 class="text-8xl font-[Sail] text-[#9C0746]">Sweet Cup Cake</h1>
-        <p class="font-[Montserrat-Bold] text-7xl w-2/3">
+        class="lg:mt-72 mt-20 absolute left-0 right-0 lg:right-auto lg:left-auto flex flex-col justify-center text-center lg:text-left items-center lg:items-left lg:gap-16 gap-5">
+        <h1 class="lg:text-8xl scale-[0.70] font-[Sail] lg:pl-52 text-[#9C0746] w-full">Sweet Cup Cake</h1>
+        <p class="font-[Montserrat-Bold] lg:text-7xl text-2xl w-2/3">
           We will make yours life is sweeter!
         </p>
       </div>
       <img
         :src="HightLightPink"
-        class="pink-highlight"
+        class="pink-highlight hidden lg:block"
         alt=""
         draggable="false" />
 
-      <CupCakes />
+      <!-- <CupCakes /> -->
 
-      <VideoTrailer />
-      <WhyIsItDeliciousHere />
+      <!-- <VideoTrailer /> -->
+      <!-- <WhyIsItDeliciousHere />
       <NewProducts />
       <HowDoWeWork />
       <CatalogOfTastyTreats />
       <CollectionsOfCupcakes />
-      <OrderSweet />
+      <OrderSweet /> -->
 
       <br /><br /><br />
     </main>
