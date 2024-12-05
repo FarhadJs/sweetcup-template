@@ -1,6 +1,6 @@
 <template>
   <div class="relative mt-64">
-    <div class="flex justify-center gap-5 mt-10">
+    <div class="flex justify-center gap-5 mt-10 lg:hidden">
       <button
         @mouseenter="
           $store.toggleSelectCupCake();
@@ -55,7 +55,7 @@
         alt="" />
     </div>
 
-    <div class="flex justify-center gap-7 mt-10 relative z-[50]">
+    <div class="flex justify-center gap-7 mt-10 relative z-[50] lg:hidden">
       <button
         @click="
           leftButtonSlideAction();
