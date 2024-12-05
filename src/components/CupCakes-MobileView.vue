@@ -28,7 +28,7 @@
 
       <div class="flex mt-14">
         <img
-          class="mcupcake w-64 h-64 translate-x-48 translate-y-3"
+          class="mcupcake w-64 h-64 translate-x-48 translate-y-5"
           src="../assets//img/chocolate-cupcake.png"
           alt="ChocolateCupCake" />
         <img
@@ -36,7 +36,7 @@
           src="../assets//img/pink-cupcake.png"
           alt="PinkCupCake" />
         <img
-          class="mcupcake w-64 h-64 translate-x-48 translate-y-7"
+          class="mcupcake w-64 h-64 translate-x-48 translate-y-5"
           src="../assets//img/caramel-cupcake.png"
           alt="CaramelCupcake" />
       </div>
