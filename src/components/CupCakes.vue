@@ -1,74 +1,76 @@
 <template>
-  <div dir="rtl" class="relative -z-10">
-    <p
-      class="absolute top-40 right-64 bg-[#444251] rounded-full w-28 h-28 text-4xl flex justify-center items-center text-white p-4 transition-all duration-500"
-      :class="store.is_selecting_cupcake ? 'top-[3.3em] right-[5.7em]' : ''">
-      {{ CupCakeSelected.price }}$
-    </p>
+  <div class="hidden lg:block">
+    <div dir="rtl" class="relative -z-10 hidden lg:block">
+      <p
+        class="absolute top-40 right-64 bg-[#444251] rounded-full w-28 h-28 text-4xl flex justify-center items-center text-white p-4 transition-all duration-500"
+        :class="store.is_selecting_cupcake ? 'top-[3.3em] right-[5.7em]' : ''">
+        {{ CupCakeSelected.price }}$
+      </p>
 
-    <img
-      class="cupcake w-[400px] scale-150 -translate-x-96 translate-y-52 transition-all duration-500"
-      src="../assets//img/pink-cupcake.png"
-      alt="PinkCupCake" />
-    <img
-      class="cupcake w-[300px] translate-x-32 translate-y-32"
-      src="../assets//img/chocolate-cupcake.png"
-      alt="ChocolateCupCake" />
-    <img
-      class="cupcake w-[300px] translate-x-32 -translate-y-[780px]"
-      src="../assets//img/caramel-cupcake.png"
-      alt="CaramelCupcake" />
+      <img
+        class="cupcake w-[400px] scale-150 -translate-x-96 translate-y-52 transition-all duration-500"
+        src="../assets//img/pink-cupcake.png"
+        alt="PinkCupCake" />
+      <img
+        class="cupcake w-[300px] translate-x-32 translate-y-32"
+        src="../assets//img/chocolate-cupcake.png"
+        alt="ChocolateCupCake" />
+      <img
+        class="cupcake w-[300px] translate-x-32 -translate-y-[780px]"
+        src="../assets//img/caramel-cupcake.png"
+        alt="CaramelCupcake" />
 
-    <h3
-      class="bg-white p-3 rounded-full text-center text-2xl font-bold absolute z-[500] bottom-96 right-[18.8em] w-60 transition-all duration-500"
-      :class="$store.is_selecting_cupcake ? 'bottom-[13em] scale-125' : ''">
-      {{ CupCakeSelected.name }}
-    </h3>
-  </div>
+      <h3
+        class="bg-white p-3 rounded-full text-center text-2xl font-bold absolute z-[500] bottom-96 right-[18.8em] w-60 transition-all duration-500"
+        :class="$store.is_selecting_cupcake ? 'bottom-[13em] scale-125' : ''">
+        {{ CupCakeSelected.name }}
+      </h3>
+    </div>
 
-  <div class="flex gap-5 absolute top-[45em] left-52">
-    <button
-      @mouseenter="
-        $store.toggleSelectCupCake();
-        checkSelecting();
-      "
-      @mouseleave="
-        $store.toggleSelectCupCake();
-        checkSelecting();
-      "
-      class="serve_buttons">
-      Choose dessert
-    </button>
-    <button
-      class="rounded-full border border-[#9C0746] p-4 px-8 w-72 h-20 text-2xl transition-all hover:bg-[#9C0746] hover:text-white hover:drop-shadow-2xl hover:shadow-slate-800">
-      Create your own
-    </button>
-  </div>
+    <div class="flex gap-5 absolute top-[45em] left-52">
+      <button
+        @mouseenter="
+          $store.toggleSelectCupCake();
+          checkSelecting();
+        "
+        @mouseleave="
+          $store.toggleSelectCupCake();
+          checkSelecting();
+        "
+        class="serve_buttons">
+        Choose dessert
+      </button>
+      <button
+        class="rounded-full border border-[#9C0746] p-4 px-8 w-72 h-20 text-2xl transition-all hover:bg-[#9C0746] hover:text-white hover:drop-shadow-2xl hover:shadow-slate-800">
+        Create your own
+      </button>
+    </div>
 
-  <div class="absolute z-20 top-[53em] right-[480px] flex gap-7">
-    <img
-      src="../assets//img//comp-single.png"
-      class="absolute right-52 -top-32 scale-125"
-      :class="$store.is_selecting_cupcake ? 'mt-10' : ''"
-      alt="" />
-    <button
-      @click="
-        leftButtonSlideAction();
-        getLeftAction();
-      "
-      :class="$store.is_selecting_cupcake ? 'mt-20' : ''"
-      class="bg-white p-4 rounded-lg active:scale-95 transition-all duration-500">
-      <img :src="ArrowLeft" alt="" />
-    </button>
-    <button
-      @click="
-        rightButtonSlideAction();
-        getRightAction();
-      "
-      :class="$store.is_selecting_cupcake ? 'mt-20' : ''"
-      class="bg-white p-4 rounded-lg active:scale-95 transition-all duration-500">
-      <img :src="ArrowRight" alt="" />
-    </button>
+    <div class="absolute z-20 top-[53em] right-[480px] flex gap-7">
+      <img
+        src="../assets//img//comp-single.png"
+        class="absolute right-52 -top-32 scale-125"
+        :class="$store.is_selecting_cupcake ? 'mt-10' : ''"
+        alt="" />
+      <button
+        @click="
+          leftButtonSlideAction();
+          getLeftAction();
+        "
+        :class="$store.is_selecting_cupcake ? 'mt-20' : ''"
+        class="bg-white p-4 rounded-lg active:scale-95 transition-all duration-500">
+        <img :src="ArrowLeft" alt="" />
+      </button>
+      <button
+        @click="
+          rightButtonSlideAction();
+          getRightAction();
+        "
+        :class="$store.is_selecting_cupcake ? 'mt-20' : ''"
+        class="bg-white p-4 rounded-lg active:scale-95 transition-all duration-500">
+        <img :src="ArrowRight" alt="" />
+      </button>
+    </div>
   </div>
 </template>
 <script setup>

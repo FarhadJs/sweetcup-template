@@ -11,6 +11,7 @@
   import CatalogOfTastyTreats from "./components/CatalogOfTastyTreats.vue";
   import CollectionsOfCupcakes from "./components/CollectionsOfCupcakes.vue";
   import OrderSweet from "./components/OrderSweet.vue";
+  import CupCakesMobileView from "./components/CupCakes-MobileView.vue";
 
   const theme = ref("dark");
 </script>
@@ -21,8 +22,11 @@
     The Resolution for Mobile is not available yet.
   </div> -->
   <div class="overflow-hidden w-full lg:block">
-    <nav class="flex gap-5 p-5 pl-7 lg:px-64 justify-between lg:justify-around relative z-50">
-    <img src="./assets/svg/menu-burger.svg" class="scale-150 -mt-2 lg:hidden" />
+    <nav
+      class="flex gap-5 p-5 pl-7 lg:px-64 justify-between lg:justify-around relative z-50">
+      <img
+        src="./assets/svg/menu-burger.svg"
+        class="scale-150 -mt-2 lg:hidden" />
       <h1 class="text-xl font-[Sail] text-[#9C0746]">Sweet Cup Cake</h1>
       <ul class="list-none lg:flex gap-10 mx-auto hidden">
         <li>About us</li>
@@ -35,8 +39,11 @@
     <main>
       <TextBackground />
       <div
-        class="lg:mt-72 mt-20 absolute left-0 right-0 lg:right-auto lg:left-auto flex flex-col justify-center text-center lg:text-left items-center lg:items-left lg:gap-16 gap-5">
-        <h1 class="lg:text-8xl scale-[0.70] font-[Sail] lg:pl-52 text-[#9C0746] w-full">Sweet Cup Cake</h1>
+        class="absolute lg:top-72 top-32 left-0 right-0 lg:right-auto lg:left-auto flex flex-col justify-center text-center lg:text-left items-center lg:items-left lg:gap-16 gap-5">
+        <h1
+          class="lg:text-8xl scale-[0.70] font-[Sail] lg:pl-52 text-[#9C0746] w-full">
+          Sweet Cup Cake
+        </h1>
         <p class="font-[Montserrat-Bold] lg:text-7xl text-2xl w-2/3">
           We will make yours life is sweeter!
         </p>
@@ -47,7 +54,8 @@
         alt=""
         draggable="false" />
 
-      <!-- <CupCakes /> -->
+      <CupCakes />
+      <CupCakesMobileView />
 
       <!-- <VideoTrailer /> -->
       <!-- <WhyIsItDeliciousHere />
