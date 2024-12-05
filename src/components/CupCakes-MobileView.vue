@@ -124,18 +124,13 @@
       CupCakeSlide.value > 0
     )
       CupCakeSlide.value -= 1;
-
-      console.log(CupCakeSlide.value);
-
     };
 
     const rightButtonSlideAction = () => {
-
-        if (CupCakeSlide.value < JsonCupCakes.value.length - 1){
-            CupCakeSlide.value += 1;
-        }
-        console.log(CupCakeSlide.value);
-  };
+      if (CupCakeSlide.value < JsonCupCakes.value.length - 1){
+          CupCakeSlide.value += 1;
+      }
+    };
 
   const getLeftAction = () => {
 

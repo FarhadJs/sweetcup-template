@@ -41,7 +41,7 @@
       <div
         class="absolute lg:top-72 top-32 left-0 right-0 lg:right-auto lg:left-auto flex flex-col justify-center text-center lg:text-left items-center lg:items-left lg:gap-16 gap-5">
         <h1
-          class="lg:text-8xl scale-[0.70] font-[Sail] lg:pl-52 text-[#9C0746] w-full">
+          class="lg:text-8xl scale-[0.70] font-[Sail] lg:pl-8 text-[#9C0746] w-full">
           Sweet Cup Cake
         </h1>
         <p class="font-[Montserrat-Bold] lg:text-7xl text-2xl w-2/3">
