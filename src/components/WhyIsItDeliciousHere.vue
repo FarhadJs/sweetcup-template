@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-40 relative">
+  <div class="mt-[70vh] relative hidden">
     <h1 class="text-5xl text-center font-bold">Why is it delicious here?</h1>
     <img
       :src="StrawBerry"
@@ -70,6 +70,85 @@
           class="absolute w-7 h-7 rounded-full bg-[#9C0746] bottom-10 left-10"></div>
         <div
           class="absolute w-7 h-7 rounded-full bg-[#9C0746] bottom-10 right-10"></div>
+
+        <img src="../assets//img/pov2-2.png" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile View -->
+
+  <div class="mt-[58vh] relative lg:hidden">
+    <h1 class="text-3xl text-center font-bold">Why is it delicious here?</h1>
+    <img
+      :src="StrawBerry"
+      alt="StrawBerry"
+      class="absolute right-[70vw] -top-0 scale-50" />
+    <img
+      :src="StrawBerry"
+      alt="StrawBerry"
+      class="absolute -right-[31vw] -top-44 scale-[0.18]" />
+    <img
+      :src="StrawBerry"
+      alt="StrawBerry"
+      class="absolute -right-36 top-96 scale-[0.50]" />
+
+    <div
+      class="flex flex-col gap-16 text-center justify-center items-center mt-20">
+      <div class="flex flex-col items-center gap-5">
+        <img :src="Bottle" class="rounded-full bg-[#FDE5EA] w-24 h-24 p-5" />
+        <figcaption class="">
+          Quality<br />
+          products
+        </figcaption>
+      </div>
+
+      <div class="flex flex-col items-center gap-5">
+        <img :src="Oven" class="rounded-full bg-[#FDE5EA] p-5" />
+        <figcaption class="">
+          Expensive <br />
+          Equipment
+        </figcaption>
+      </div>
+
+      <div class="flex flex-col items-center gap-5">
+        <img :src="FoodBook" class="rounded-full bg-[#FDE5EA] p-5" />
+        <figcaption class="">
+          Unique <br />
+          recipes
+        </figcaption>
+      </div>
+
+      <div dir="rtl" class="flex flex-col items-center gap-5">
+        <img :src="Money" class="rounded-full bg-[#FDE5EA] p-5" />
+        <figcaption class="">
+          Affordable <br />
+          prices
+        </figcaption>
+      </div>
+
+      <div class="flex flex-col items-center gap-5">
+        <img :src="Chef" class="rounded-full bg-[#FDE5EA] w-24 h-24 p-5" />
+        <figcaption class="">The best <br />confectioners</figcaption>
+      </div>
+
+      <div dir="rtl" class="flex flex-col items-center gap-5">
+        <img :src="Offer" class="rounded-full bg-[#FDE5EA] w-24 h-24 p-5" />
+        <figcaption class="">
+          Loyalty<br />
+          program
+        </figcaption>
+      </div>
+
+      <div class="relative rounded-full outline outline-[#FDE5EA] outline-8 w-72 h-72 mt-10">
+        <div
+          class="absolute w-6 h-6 rounded-full bg-[#9C0746] top-7 left-7"></div>
+        <div
+          class="absolute w-6 h-6 rounded-full bg-[#9C0746] top-7 right-7"></div>
+        <div
+          class="absolute w-6 h-6 rounded-full bg-[#9C0746] bottom-7 left-7"></div>
+        <div
+          class="absolute w-6 h-6 rounded-full bg-[#9C0746] bottom-7 right-7"></div>
 
         <img src="../assets//img/pov2-2.png" alt="" />
       </div>
