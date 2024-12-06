@@ -1,10 +1,10 @@
 <template>
-  <div class="-mt-56 flex justify-start items-center ml-20">
+  <div class="relative bg-black lg:-mt-[45vh] mt-80 lg:ml-20 w-96">
     <div
       v-show="!is_play"
-      class="absolute left-[17.9em] z-50 w-[400px] transition-all duration-500 scale-105 rounded-2xl flex justify-center items-center cursor-pointer"
+      class="absolute lg:left-[7.9em] -top-48 right-0 left-0 z-10  lg:w-full transition-all duration-500 scale-105 rounded-2xl flex justify-center items-center cursor-pointer"
       @click="playVideo">
-      <div class="absolute z-20 flex gap-3 flex-col justify-center items-center">
+      <div class="absolute flex gap-3 flex-col justify-center items-center">
         <p class="text-3xl font-[Sail] text-white w-52">
           Video about our confectionery
         </p>
@@ -12,16 +12,17 @@
       </div>
       <img
         src="../assets/img/video-cover.png"
-        class="w-[430px] h-[290px]" />
+        class="w-full h-72" />
     </div>
     <video
-      class="ml-64 -mt-4 bg-black p-4 relative z-10 w-[300px] h-48 rounded-2xl">
+      class="absolute -top-32 lg:left-44 left-12 z-0 -mt-4 bg-black p-4 w-72 lg:h-44 rounded-2xl"
+      controls>
       <source src="../assets/video/History-of-cupcakes.mp4" type="video/mp4" />
     </video>
 
     <img
       src="../assets/img/raspberry.png"
-      class="-ml-16 mt-5 w-32 h-32 relative" />
+      class=" w-32 h-32 absolute left-96 -z-10 -top-20 ml-5" />
   </div>
 </template>
 <script setup>

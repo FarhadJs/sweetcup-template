@@ -57,7 +57,7 @@
       <CupCakes />
       <CupCakesMobileView />
 
-      <!-- <VideoTrailer /> -->
+      <VideoTrailer />
       <!-- <WhyIsItDeliciousHere />
       <NewProducts />
       <HowDoWeWork />

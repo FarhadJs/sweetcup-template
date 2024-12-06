@@ -32,11 +32,11 @@
           src="../assets//img/chocolate-cupcake.png"
           alt="ChocolateCupCake" />
         <img
-          class="mcupcake w-80 h-80 translate-x-48 transition-all duration-500"
+          class="mcupcake w-80 h-80 translate-x-44 transition-all duration-500"
           src="../assets//img/pink-cupcake.png"
           alt="PinkCupCake" />
         <img
-          class="mcupcake w-64 h-64 translate-x-48 translate-y-5"
+          class="mcupcake w-64 h-64 translate-x-40 translate-y-5"
           src="../assets//img/caramel-cupcake.png"
           alt="CaramelCupcake" />
       </div>
@@ -62,7 +62,7 @@
           getLeftAction();
         "
         :class="$store.is_selecting_cupcake ? 'mt-20' : ''"
-        class="bg-white p-4 rounded-lg active:scale-95 transition-all duration-500"
+        class="bg-white p-4 rounded-lg active:scale-50 transition-all duration-500"
         style="box-shadow: 0px 4px 30px 0px #00000040">
         <img :src="ArrowLeft" />
       </button>
@@ -73,7 +73,7 @@
           getRightAction();
         "
         :class="$store.is_selecting_cupcake ? 'mt-20' : ''"
-        class="bg-white p-4 rounded-lg active:scale-95 transition-all duration-500 cursor-pointer"
+        class="bg-white p-4 relative rounded-lg active:scale-50 transition-all duration-300 cursor-pointer"
         style="box-shadow: 0px 4px 30px 0px #00000040">
         <img class="cursor-pointer" :src="ArrowRight" />
       </button>
@@ -124,12 +124,16 @@
       CupCakeSlide.value > 0
     )
       CupCakeSlide.value -= 1;
+
+      console.log(CupCakeSlide.value);
+
     };
 
     const rightButtonSlideAction = () => {
       if (CupCakeSlide.value < JsonCupCakes.value.length - 1){
-          CupCakeSlide.value += 1;
+        CupCakeSlide.value += 1;
       }
+      console.log(CupCakeSlide.value);
     };
 
   const getLeftAction = () => {
@@ -139,11 +143,11 @@
         CupCakes[0].classList.remove("translate-x-80");
         CupCakes[0].classList.add("translate-x-48");
 
-        CupCakes[1].classList.remove("translate-x-[27em]");
-        CupCakes[1].classList.add("translate-x-48");
+        CupCakes[1].classList.remove("translate-x-[28em]");
+        CupCakes[1].classList.add("translate-x-44");
 
-        CupCakes[2].classList.remove("translate-x-[28em]");
-        CupCakes[2].classList.add("translate-x-48");
+        CupCakes[2].classList.remove("translate-x-[27.5em]");
+        CupCakes[2].classList.add("translate-x-40");
 
         CupCakeSelected.value = JsonCupCakes.value[1];
 
@@ -152,9 +156,10 @@
         CupCakes[0].classList.remove("translate-x-48");
         CupCakes[0].classList.add("-translate-x-20");
 
-        CupCakes[1].classList.remove("translate-x-48");
-        CupCakes[1].classList.add("-translate-x-20");
+        CupCakes[1].classList.remove("translate-x-44");
+        CupCakes[1].classList.add("-translate-x-28");
 
+        CupCakes[2].classList.remove("translate-x-40");
         CupCakes[2].classList.remove("translate-x-48");
         CupCakes[2].classList.add("translate-x-0");
 
@@ -170,7 +175,7 @@
         CupCakes[0].classList.remove("-translate-x-20");
         CupCakes[0].classList.add("translate-x-48");
 
-        CupCakes[1].classList.remove("-translate-x-20");
+        CupCakes[1].classList.remove("-translate-x-28");
         CupCakes[1].classList.add("translate-x-48");
 
         CupCakes[2].classList.remove("translate-x-0");
@@ -183,11 +188,12 @@
         CupCakes[0].classList.remove("translate-x-48");
         CupCakes[0].classList.add("translate-x-80");
 
-        CupCakes[1].classList.remove("translate-x-48");
-        CupCakes[1].classList.add("translate-x-[27em]");
+        CupCakes[1].classList.remove("translate-x-44");
+        CupCakes[1].classList.add("translate-x-[28em]");
 
         CupCakes[2].classList.remove("translate-x-48");
-        CupCakes[2].classList.add("translate-x-[28em]");
+        CupCakes[2].classList.remove("translate-x-40");
+        CupCakes[2].classList.add("translate-x-[27.5em]");
 
         CupCakeSelected.value = JsonCupCakes.value[2];
 
