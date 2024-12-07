@@ -1,6 +1,6 @@
 <template>
   <div class="mt-32 flex flex-col">
-    <div class="grid grid-cols-3 place-items-center gap-32 text-center">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 place-items-center gap-32 text-center">
       <div class="flex flex-col items-center gap-5 w-[319px]">
         <img src="../assets/img/pink-cupcake.png" class="w-[319px] h-[358px]" />
         <h5 class="text-[#9C0746] text-3xl font-[Montserrat] font-extrabold">

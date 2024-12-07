@@ -3,7 +3,7 @@
     class="flex flex-col gap-20 items-center justify-center w-full text-center mt-44 relative">
     <h1 class="text-5xl font-bold">Try our new products</h1>
     <img src="../assets/img/raspberry.png" class="absolute -top-28v -left-32 scale-[0.3]">
-    <div class="flex gap-20 justify-center items-center">
+    <div class="flex flex-col lg:flex-row gap-20 justify-center items-center">
       <div class="flex flex-col w-96 justify-between items-center">
         <img :src="PannaCotta" />
         <div class="flex flex-col justify-center items-center gap-3">

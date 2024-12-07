@@ -3,7 +3,7 @@
 <template>
   <h1 class="text-center text-5xl font-bold mt-40">How do we work?</h1>
 
-  <div class="w-full relative flex gap-32 justify-center mt-32">
+  <div class="w-full relative flex flex-col lg:flex-row mx-auto gap-32 justify-center items-center mt-32">
     <div
       class="w-[294px] h-[339px] p-10 border border-[#FFD4DD] rounded flex flex-col items-center container_card">
       <div

@@ -59,11 +59,11 @@
 
       <VideoTrailer />
       <WhyIsItDeliciousHere />
-      <!-- <NewProducts /> -->
-      <!-- <HowDoWeWork /> -->
-      <!-- <CatalogOfTastyTreats /> -->
-      <!-- <CollectionsOfCupcakes /> -->
-      <!-- <OrderSweet /> -->
+      <NewProducts />
+      <HowDoWeWork />
+      <CatalogOfTastyTreats />
+      <CollectionsOfCupcakes />
+      <OrderSweet />
 
       <br /><br /><br />
     </main>

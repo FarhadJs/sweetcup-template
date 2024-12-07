@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-black lg:-mt-[45vh] mt-80 lg:ml-20 w-96">
+  <div class="relative bg-black lg:-mt-[45vh] mt-80 lg:ml-20 mx-auto w-96">
     <div
       v-show="!is_play"
       class="absolute lg:left-[7.9em] -top-48 right-0 left-0 z-10  lg:w-full transition-all duration-500 scale-105 rounded-2xl flex justify-center items-center cursor-pointer"

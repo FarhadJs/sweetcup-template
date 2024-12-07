@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-[70vh] relative hidden">
+  <div class="mt-[70vh] relative hidden lg:block">
     <h1 class="text-5xl text-center font-bold">Why is it delicious here?</h1>
     <img
       :src="StrawBerry"

@@ -125,7 +125,7 @@
     )
       CupCakeSlide.value -= 1;
 
-      console.log(CupCakeSlide.value);
+      // console.log(CupCakeSlide.value);
 
     };
 
@@ -133,7 +133,7 @@
       if (CupCakeSlide.value < JsonCupCakes.value.length - 1){
         CupCakeSlide.value += 1;
       }
-      console.log(CupCakeSlide.value);
+      // console.log(CupCakeSlide.value);
     };
 
   const getLeftAction = () => {
@@ -176,7 +176,7 @@
         CupCakes[0].classList.add("translate-x-48");
 
         CupCakes[1].classList.remove("-translate-x-28");
-        CupCakes[1].classList.add("translate-x-48");
+        CupCakes[1].classList.add("translate-x-44");
 
         CupCakes[2].classList.remove("translate-x-0");
         CupCakes[2].classList.add("translate-x-48");
@@ -218,7 +218,7 @@
 
   onBeforeMount(() => {
     CupCakeSelected.value = JsonCupCakes.value[1];
-    console.log(CupCakes);
+    // console.log(CupCakes);
 
   });
 </script>

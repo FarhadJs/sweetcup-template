@@ -12,7 +12,7 @@
     <img src="../assets/img/blur_comp.png" class="absolute -top-20 right-0" />
     <img src="../assets/svg/Mint_leaves.svg" class="absolute -top-32 left-0" />
 
-    <div class="flex gap-20 justify-center">
+    <div class="flex flex-col lg:flex-row gap-20 justify-center items-center">
       <div class="flex flex-col items-center relative">
         <h3 class="p-36 text-6xl text-white font-[Montserrat-Bold]">
           Order a <br />

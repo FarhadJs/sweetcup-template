@@ -3,13 +3,13 @@
     <h1 class="text-center">Catalog of tasty treats</h1>
     <img
       src="../assets/img/mixed-berries-1.png"
-      class="absolute -top-16 left-0" />
-    <img src="../assets/img/haf-cupcake.png" class="absolute right-0 -top-48" />
-    <div class="mt-20 flex justify-center">
+      class="absolute lg:-top-16 -left-32 lg:left-0 scale-50 lg:scale-100" />
+    <img src="../assets/img/haf-cupcake.png" class="absolute -right-24 lg:right-0 -mr-2 lg:-mr-0 lg:-top-48 -top-80 scale-50 lg:scale-100" />
+    <div class="mt-20 flex justify-center scale-50 lg:scale-100">
       <div class="mt-10 flex">
         <div
           id="Eclair"
-          class="relative w-60 flex flex-col justify-center items-center">
+          class="relative w-60 flex-col justify-center items-center hidden lg:flex">
           <img
             src="../assets/img/Eclair.png"
             class="absolute w-36 h-36 top-24 z-30" />
@@ -39,7 +39,7 @@
 
         <div
           id="muffin"
-          class="relative flex flex-col justify-center items-center">
+          class="relative flex-col justify-center items-center hidden lg:flex">
           <img
             src="../assets/img/muffin.png"
             class="w-60 h-60 mb-10 relative z-30" />
