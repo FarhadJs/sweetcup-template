@@ -4,9 +4,9 @@ A modern, responsive, and elegant **Vue 3 + Vite + Tailwind CSS** template desig
 
 ## 🚀 Live Demo
 
-**[View Live Demo]([https://your-demo-link-here](https://sweet-raiden-cupcake.netlify.app/))**
+**View Live Demo**
 
-![Sweet Cup Cake Preview](https://via.placeholder.com/800x500/4f46e5/ffffff?text=SweetCup+Template+Preview)
+![Sweet Cup Cake Preview](https://sweet-raiden-cupcake.netlify.app/)
 
 ## ✨ Features
 
